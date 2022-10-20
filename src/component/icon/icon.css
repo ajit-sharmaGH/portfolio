@@ -1,0 +1,10 @@
+.social-icons {
+    min-width: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons>a:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+}
