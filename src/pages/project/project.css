@@ -54,11 +54,10 @@
         height: 18rem;
         width: 90%;
         margin-left: 0;
-        /* border: 1px solid var(--dark); */
         box-shadow: 1px 3px 5px var(--dark-tertiary);
     }
     .project-child aside:nth-child(2) {
-        width: 90%;
-        margin: 1rem;
+        width: 92%;
+        margin: 1rem 1rem 1rem 0;
     }
 }
