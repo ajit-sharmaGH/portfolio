@@ -15,11 +15,23 @@ const HeaderComponent = () => {
       <ul className="flex-wrap fs-xs">
         {navbarListing.map((item) => {
           return (
-            <ul key={item.id}>
+            <div key={item.id}>
               <Link to={item.link} className="link-styling">
                 {item.name}
               </Link>
-            </ul>
+              <div className="project-model">
+                <p>
+                  <Link to={item.miniLink} className="model-link-styling">
+                    {item.miniName}
+                  </Link>
+                </p>
+                <p>
+                  <Link to={item.majorLink} className="model-link-styling">
+                    {item.majorName}
+                  </Link>
+                </p>
+              </div>
+            </div>
           );
         })}
       </ul>

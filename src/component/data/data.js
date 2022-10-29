@@ -11,13 +11,18 @@ export const navbarListing = [{
 }, {
     id: 3,
     name: "Projects",
-    link: "/project",
-    color: "blue"
+    // link: "/project",
+    color: "blue",
+    miniLink: "/mini_projects",
+    majorLink: "/major_projects",
+    miniName: "Mini Project",
+    majorName: "Major Projects"
 }, {
     id: 4,
     name: "Blogs",
     link: "/blog",
-    color: "blue"
+    color: "blue",
+
 }]
 
 export const mySkills = [{
