@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ConnectSocialIcons } from "../../component/icon/connectIcons";
 import "./home.css";
 const HomeComponent = () => {
@@ -16,9 +15,9 @@ const HomeComponent = () => {
         Web Applications that leads to the success of the overall product
       </p>
 
-      <Link className="home-project-link fs-xs" to="/project">
-        Projects
-      </Link>
+      <span className="other-link fs-xs">
+        Email Me
+      </span>
 
       <footer>
         <ConnectSocialIcons />
