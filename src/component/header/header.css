@@ -14,12 +14,42 @@
     background-size: cover;
 }
 
+.project-model {
+    visibility: hidden;
+    position: absolute;
+    transition: 0.4s ease-out;
+    transition-duration: 0.3s;
+    /* margin-top: 1rem; */
+    /* padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 5px;
+    padding-top: 1rem; */
+    padding: 1rem 5px 5px 8px;
+    right: 3.43rem;
+    background-color: var(--secondary-bg-color);
+}
+
+.model-link-styling,
 .link-styling {
     text-decoration: none;
     color: var(--nav-color);
     margin-right: 1.5rem;
 }
 
+.model-link-styling {
+    margin-right: 0;
+    font-size: 1.4rem;
+}
+
+.model-link-styling:hover,
 .link-styling:hover {
     color: var(--logo-color);
+}
+
+.project-model:hover {
+    visibility: visible;
+}
+
+.link-styling:hover+.project-model {
+    visibility: visible;
 }
