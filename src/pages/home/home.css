@@ -25,11 +25,13 @@
 
 .other-link {
     background-color: var(--barcelona-color);
-    color: var(--blue);
-    text-decoration: none;
+    color: var(--logo-color);
     padding: 3px 8px;
     border-radius: 5px;
+    text-decoration: none;
     border: 2px solid var(--dark);
+    font-size: normal;
+    font-weight: normal;
 }
 
 .other-link:hover {

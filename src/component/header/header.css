@@ -66,3 +66,9 @@
         margin-right: 10px;
     }
 }
+
+@media screen and (max-width:500px) {
+    .profile-image {
+        display: none;
+    }
+}

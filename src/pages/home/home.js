@@ -15,9 +15,9 @@ const HomeComponent = () => {
         Web Applications that leads to the success of the overall product
       </p>
 
-      <span className="other-link fs-xs">
+      <button className="other-link">
         Email Me
-      </span>
+      </button>
 
       <footer>
         <ConnectSocialIcons />
