@@ -11,7 +11,6 @@ export const navbarListing = [{
 }, {
     id: 3,
     name: "Projects",
-    // link: "/project",
     color: "blue",
     miniLink: "/mini_projects",
     majorLink: "/major_projects",
@@ -23,6 +22,27 @@ export const navbarListing = [{
     link: "/blog",
     color: "blue",
 
+}]
+export const sidebarListing = [{
+    id: 1,
+    name: "Home",
+    link: "/",
+}, {
+    id: 1,
+    name: "About",
+    link: "/about",
+}, {
+    id: 3,
+    name: "Mini Projects",
+    link: "/mini_projects",
+}, {
+    id: 4,
+    name: "Major Projects",
+    link: "/major_projects",
+}, {
+    id: 5,
+    name: "Blogs",
+    link: "/blog"
 }]
 
 export const mySkills = [{
