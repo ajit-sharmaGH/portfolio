@@ -1,24 +1,27 @@
 import "./header.css";
 import { navbarListing } from "../data/data";
 import { Link } from "react-router-dom";
+import { Bars } from "../icon/icon";
 const HeaderComponent = () => {
   return (
     <header className="header flex-row-align-center padding-half">
-      <div className="flex-row-align-center mr-auto ml-2">
+      <div className="flex-row-align-center mr-auto ml-1">
         <img
-          className="profile-image mr-2"
+          className="profile-image"
           src="/profile_image.jpg"
           alt="profile_image"
         />
         <h3 className="fw-600 fs-xs link-styling">Ajit Sharma</h3>
       </div>
-      <ul className="flex-wrap fs-xs">
+      <span className="bars"><Bars size={10} /></span>
+      <ul className="flex-wrap fs-xs routing-links">
         {navbarListing.map((item) => {
           return (
             <div key={item.id}>
               <Link to={item.link} className="link-styling">
                 {item.name}
               </Link>
+              
               <div className="project-model">
                 <p>
                   <Link to={item.miniLink} className="model-link-styling">
@@ -32,9 +35,11 @@ const HeaderComponent = () => {
                 </p>
               </div>
             </div>
+            
           );
         })}
       </ul>
+      
     </header>
   );
 };

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { mySkills } from "../../component/data/data";
 import { ConnectSocialIcons } from "../../component/icon/connectIcons";
 import "./about.css";
@@ -40,7 +42,7 @@ const About = () => {
         </div>
        
       </div>
-      <button className="mb-1">Email Me</button>
+      <Link to ="/others" className="mb-1 other-link">Others</Link>
       <footer className="mb-1">
         <ConnectSocialIcons />
       </footer>
