@@ -1,24 +1,36 @@
 import "./header.css";
-import { navbarListing } from "../data/data";
+import React, { useState } from "react";
+import onClickOutsideHOC from "react-onclickoutside";
+
+import { navbarListing, sidebarListing } from "../data/data";
 import { Link } from "react-router-dom";
+import { Bars } from "../icon/icon";
 const HeaderComponent = () => {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+  const hideSidebar = () => setSidebar(onClickOutsideHOC());
   return (
     <header className="header flex-row-align-center padding-half">
-      <div className="flex-row-align-center mr-auto ml-2">
+      <div className="flex-row-align-center mr-auto ml-1">
         <img
-          className="profile-image mr-2"
+          className="profile-image"
           src="/profile_image.jpg"
           alt="profile_image"
         />
         <h3 className="fw-600 fs-xs link-styling">Ajit Sharma</h3>
       </div>
-      <ul className="flex-wrap fs-xs">
+      <span className="bars" onClick={showSidebar}>
+        <Bars size={10} />
+      </span>
+      <nav className="routing-links active fs-xs">
         {navbarListing.map((item) => {
           return (
             <div key={item.id}>
               <Link to={item.link} className="link-styling">
                 {item.name}
               </Link>
+
               <div className="project-model">
                 <p>
                   <Link to={item.miniLink} className="model-link-styling">
@@ -34,7 +46,16 @@ const HeaderComponent = () => {
             </div>
           );
         })}
-      </ul>
+      </nav>
+
+      <nav className={sidebar ? "nav-menu-items  sidebar" : "sidebar"}>
+        {sidebarListing.map((item)=>{
+          return (
+            <Link  to={item.link} className="link-styling fs-xs" onClick={hideSidebar}> {item.name}  </Link>
+          )
+        })}
+       
+      </nav>
     </header>
   );
 };
