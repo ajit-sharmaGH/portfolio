@@ -55,10 +55,10 @@ export const mySkills = [{
 
     }, {
         id: 3,
-        language: "HTML",
+        language: "HTML 5",
     }, {
         id: 4,
-        language: "CSS"
+        language: "CSS 3"
     }, {
         id: 5,
         language: "Context API"
@@ -66,7 +66,11 @@ export const mySkills = [{
 
     {
         id: 6,
-        language: "Java Basics"
+        language: "Java"
+    },
+    {
+        id: 7,
+        language: "Node JS"
     }
 ]
 
