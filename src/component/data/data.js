@@ -11,7 +11,6 @@ export const navbarListing = [{
 }, {
     id: 3,
     name: "Projects",
-    // link: "/project",
     color: "blue",
     miniLink: "/mini_projects",
     majorLink: "/major_projects",
@@ -45,6 +44,7 @@ export const sidebarListing = [{
     name: "Blogs",
     link: "/blog"
 }]
+
 export const mySkills = [{
         id: 1,
         language: "Javascript",
