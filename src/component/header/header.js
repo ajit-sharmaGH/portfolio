@@ -1,14 +1,8 @@
 import "./header.css";
 import React, { useState } from "react";
 
-
 import { navbarListing, sidebarListing } from "../data/data";
-import { Link } from "react-router-dom";
-import { Bars } from "../icon/icon.js";
 
-import onClickOutsideHOC from "react-onclickoutside";
-
-import { navbarListing, sidebarListing } from "../data/data";
 import { Link } from "react-router-dom";
 import { Bars } from "../icon/icon";
 
@@ -16,10 +10,6 @@ const HeaderComponent = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-
-
-  const hideSidebar = () => setSidebar(onClickOutsideHOC());
-
   return (
     <header className="header flex-row-align-center padding-half">
       <div className="flex-row-align-center mr-auto ml-1">
@@ -28,7 +18,6 @@ const HeaderComponent = () => {
 
           src="/assets/profile_image.jpg"
 
-          src="/profile_image.jpg"
 
           alt="profile_image"
         />
@@ -70,13 +59,6 @@ const HeaderComponent = () => {
           )
         })}
 
-
-        {sidebarListing.map((item)=>{
-          return (
-            <Link  to={item.link} className="link-styling fs-xs" onClick={hideSidebar}> {item.name}  </Link>
-          )
-        })}
-       
 
       </nav>
     </header>
