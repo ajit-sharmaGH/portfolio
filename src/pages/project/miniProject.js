@@ -1,6 +1,6 @@
-import { majorProjectData } from "../../component/data/data";
+import { miniProject } from "../../component/data/data";
 import "./project.css";
-const MajorProjectComponent = () => {
+const MiniProjectComponent = () => {
   return (
     <section className="project-section">
       <div className="flex-col-center">
@@ -12,7 +12,7 @@ const MajorProjectComponent = () => {
       </div>{" "}
       <div className="project-child">
         {" "}
-        {majorProjectData.map((item) => {
+        {miniProject.map((item) => {
           return (
             <div className="project-component mb-1" key={item.id}>
               <img
@@ -36,9 +36,9 @@ const MajorProjectComponent = () => {
               </aside>{" "}
             </div>
           );
-        })}
-      </div>
+        })}{" "}
+      </div>{" "}
     </section>
   );
 };
-export { MajorProjectComponent };
+export { MiniProjectComponent };

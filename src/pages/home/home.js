@@ -5,7 +5,7 @@ const HomeComponent = () => {
     <section className="component-section">
       <img
         className="profile-photo"
-        src="/profile_image.jpg"
+        src="/assets/profile_image.jpg"
         alt="profile_photo"
       />
       <h1 className="fw-600 name-intro">HEY, I'M AJIT SHARMA</h1>
