@@ -36,8 +36,8 @@ const MajorProjectComponent = () => {
               </aside>{" "}
             </div>
           );
-        })}{" "}
-      </div>{" "}
+        })}
+      </div>
     </section>
   );
 };
