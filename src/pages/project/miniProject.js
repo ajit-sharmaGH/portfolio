@@ -4,7 +4,9 @@ const MiniProjectComponent = () => {
   return (
     <section className="project-section">
       <div className="flex-col-center">
-        <h3 className="mt-1 mb-1"> Major Projects </h3>{" "}
+        <h3 className="mt-1 mb-1"> Mini Projects {
+          "Under Improvement !"
+        } </h3>{" "}
         <p className="txt-align-center">
           {" "}
           Here I have mentioned some of my personal projects{" "}

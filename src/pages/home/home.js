@@ -9,16 +9,13 @@ const HomeComponent = () => {
         alt="profile_photo"
       />
       <h1 className="fw-600 name-intro">HEY, I'M AJIT SHARMA</h1>
-
       <p className="paragraph-intro">
         A Frontend focused Web Developer building the Frontend of Websites and
         Web Applications that leads to the success of the overall product
       </p>
-
       <button className="other-link">
         Email Me
       </button>
-
       <footer>
         <ConnectSocialIcons />
       </footer>
